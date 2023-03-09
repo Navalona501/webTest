@@ -29,7 +29,6 @@ p{
 #title{
     background-color: #ff4c68;
     color: white;
-    height: 100vh;
 }
 
 
@@ -99,8 +98,6 @@ p{
     text-align: center;
     background-color: #ef8172;
     color: white;
-    /* height take all the space available on screen */
-    height: 80vh;
 
 }
 
@@ -118,7 +115,6 @@ p{
     background-color: #ef8172;
     text-align: center;
     padding-bottom: 3%;
-    height: 20vh;
 }
 
 .press-logo{
