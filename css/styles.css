@@ -1,134 +1,152 @@
-body{
+body {
     font-family: "Montserrat", sans-serif;
 }
 
-h1{
+h1 {
     font-family: 'Montserrat-Black', sans-serif !important;
     font-size: 5rem;
     line-height: 1.5;
     font-weight: 900 !important;
 }
 
-h3{
+h3 {
     font-family: "Montserrat-bold";
     font-weight: 900 !important;
-    
+
 }
 
-h2{
+h2 {
     font-family: "Montserrat-Black", sans-serif;
     font-weight: 900 !important;
     font-size: 3rem !important;
     line-height: 1.5;
 }
 
-p{
+p {
     color: #8f8f8f;
 }
 
-#title{
+#title {
     background-color: #ff4c68;
     color: white;
 }
 
 
-.container-fluid{
-    
+.container-fluid {
+
     padding-top: 3%;
-    padding-bottom: 3%;
+    padding-bottom: 7%;
     padding-left: 15% !important;
     padding-right: 15% !important;
 }
 
 /* Navigation bar */
 
-.navbar{
+.navbar {
     padding: 0 0 4.5rem !important;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-family: 'Ubuntu', sans-serif;
     font-size: xx-large !important;
     font-weight: bold;
 }
 
-.nav-item{
+.nav-item {
     padding: 0 18px;
 }
 
-.nav-link{
+.nav-link {
     font-family: 'Montserrat-light', sans-serif;
     font-size: 1.2rem;
 }
 
 /* Download button */
 
-.download-button{
+.download-button {
     margin: 5% 3% 5% 0;
 }
 
-.title-image{
-    width: 50%;
+.title-image {
+    width: 16%;
+
     /* rotate image */
     transform: rotate(25deg);
+    position: absolute;
+    right: 23%;
 }
 
-#features{
+#features {
     padding: 7% 15%;
+    background-color: white;
+    position: relative;
 }
 
-.feature-box{
+.feature-box {
     text-align: center;
     padding: 5% !important;
 }
 
-.icon{
+.icon {
     font-size: 3.5rem;
     color: #ef8172;
 }
 
-.icon:hover{
+.icon:hover {
     color: #ff4c68;
 }
 
 /* testimonials section */
 
-#testimonials{
-    
+#testimonials {
+
     text-align: center;
     background-color: #ef8172;
     color: white;
 
 }
 
-.testimonial-image{
+.testimonial-image {
     width: 10%;
     border-radius: 100%;
     margin: 20px;
 }
 
-.carousel-item{
+.carousel-item {
     padding: 7% 15%;
 }
 
-#press{
+#press {
     background-color: #ef8172;
     text-align: center;
     padding-bottom: 3%;
 }
 
-.press-logo{
+.press-logo {
     width: 15%;
     margin: 20px 20px 50px;
 }
 
 /* pricing section */
 
-#pricing{
+#pricing {
     padding: 100px;
     text-align: center;
 }
 
-.pricing-column{
+.pricing-column {
     padding: 3% 2%;
+}
+
+/* 1028 */
+@media (max-width: 991px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0deg);
+        width: 50%;
+    }
 }
