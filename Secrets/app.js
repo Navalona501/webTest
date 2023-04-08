@@ -107,22 +107,9 @@ app.get('/logout', (req, res) => {
 app.route('/api/login').get((req, res) => {
   const email = req.body.email;
   const password = req.body.password;
-  User.findOne({ email: email }).then((user) => {
-    if(!user){
-      res.send("User not found");
-    } else {
-      bcrypt.compare(password, user.password, (err, result) => {
-        if (result === true) {
-          res.send("User connected");
-        } else {
-          res.send("Incorrect password");
-        }
-      });
-    }
-    
-  }).catch((err) => {
-    console.log(err);
-  });
+  
+  // retourne un access token si succès
+  
 });
 
 app.listen(3000, () => {
@@ -163,6 +150,27 @@ app.listen(3000, () => {
 //         }
 //       })
 //     }
+//   }).catch((err) => {
+//     console.log(err);
+//   });
+// });
+
+// app.route('/api/login').get((req, res) => {
+//   const email = req.body.email;
+//   const password = req.body.password;
+//   User.findOne({ email: email }).then((user) => {
+//     if(!user){
+//       res.send("User not found");
+//     } else {
+//       bcrypt.compare(password, user.password, (err, result) => {
+//         if (result === true) {
+//           res.send("User connected");
+//         } else {
+//           res.send("Incorrect password");
+//         }
+//       });
+//     }
+    
 //   }).catch((err) => {
 //     console.log(err);
 //   });
