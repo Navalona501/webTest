@@ -1,23 +1,40 @@
 <!doctype html>
-<html>
+<html lang="en-us">
   <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.rtl.min.css" integrity="sha384-WJUUqfoMmnfkBLne5uxXj+na/c7sesSJ32gI7GfCk4zO4GthUKhSEGyvQ839BC51" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-
-    <title>Starting page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | Custmeet</title>
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <link rel="stylesheet" href="TemplateData/ReadyPlayerMe/RpmStyle.css"><!-- Required for RPM Web Creator -->
+    <link rel="shortcut icon" href="TemplateData/favicon.ico" />
   </head>
-  <body>
-    <h1>Hello world</h1>
-
-    
-
-    <a href="Bootstrap/index.html">Intermediate Bootstrap</a>
-    <a href="">Introduction Javascript</a>
-    
+  <body >
+  <div id="unity-container" class="unity-desktop">
+    <div id="canvas-wrap" >
+      <!-- rpm-container div and contents required for RPM Web Creator -->
+      <div id="rpm-container">
+        <iframe id="rpm-frame" class="rpm-frame" allow="camera *; microphone *"></iframe>
+        <button id="rpm-hide-button" onclick="hideRpm()">Hide</button>
+      </div>
+      <!-- rpm-container div and contents required for RPM Web Creator -->
+      <canvas id="unity-canvas" ></canvas>
+    </div>
+  <div id="unity-loading-bar">
+    <div id="unity-logo"></div>
+    <div id="unity-progress-bar-empty">
+      <div id="unity-progress-bar-full"></div>
+    </div>
+  </div>
+  <div id="unity-warning"> </div>
+  <div id="unity-footer" style="">
+    <div id="unity-webgl-logo"></div>
+    <div id="unity-fullscreen-button"></div>
+    <div id="unity-build-title">Custmeet</div>
+  </div>
+</div>
+    <script src="TemplateData/ReadyPlayerMe/RpmGlobal.js"></script> <!-- Required for RPM Web Creator -->
+    <script src="TemplateData/Global.js"></script>
+    <script src="TemplateData/UnitySetup.js"></script>
+    <script src="TemplateData/ReadyPlayerMe/ReadyPlayerMeFrame.js"></script>  <!-- Required for RPM Web Creator -->
   </body>
 </html>
